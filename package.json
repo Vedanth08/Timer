@@ -1,0 +1,11 @@
+{
+  "name": "timer",
+  "version": "1.0.0",
+  "description": "This is a timer project",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "sass --watch --style expanded style.scss style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

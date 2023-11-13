@@ -1,0 +1,81 @@
+.gridContianer, .timerContainer {
+  display: grid;
+}
+
+.flexrowContainer, .timerbuttonContainer, .timervalueContainer, .timertextContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexcolContainer, .timertextvalueContainer, .timerContainerfield {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timerContainerfield {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.timerheader {
+  text-align: center;
+}
+.timerheader .timerheaderText {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.timerContainer {
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  padding: 30px;
+  margin: auto 0;
+}
+
+.timertextvalueContainer {
+  row-gap: 15px;
+}
+
+.timertextContainer {
+  justify-content: center;
+}
+
+.timervalueContainer {
+  justify-content: center;
+  gap: 10px;
+}
+
+.timervalueInput {
+  width: 80px;
+  height: 50px;
+  text-align: center;
+}
+
+.timervalueContainer input::placeholder {
+  text-align: center;
+}
+
+.timerbuttonContainer {
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.timerbuttons {
+  padding: 7px 20px;
+}
+
+body {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
