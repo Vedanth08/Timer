@@ -28,6 +28,8 @@
 
         <div class="timerContainer">
 
+          <!-- Hour Timer Clock -->
+
           <div class="timerhourContainer timertextvalueContainer">
   
             <div class="hourtextConatiner timertextContainer">
@@ -40,15 +42,15 @@
   
             <div class="hourvalueContainer timervalueContainer">
   
-              <input type="number" class="timervalueInput"placeholder="0" />
+              <input type="number" class="timervalueInput" id="timerDechourvalue" placeholder="0" min="0" max="9" value="0" />
   
-              <input type="number" class="timervalueInput" placeholder="0" />
+              <input type="number" class="timervalueInput" id="timerhourvalue" placeholder="0" min="0" max="9" value="0" />
   
             </div>
   
           </div>
   
-  
+          <!-- Minute Timer Clock -->
           <div class="timerminContainer timertextvalueContainer ">
   
             <div class="hourtextConatiner timertextContainer">
@@ -61,19 +63,20 @@
   
             <div class="hourvalueContainer timervalueContainer">
   
-              <input type="number" class="timervalueInput" placeholder="0" />
+              <input type="number" class="timervalueInput"  id="timerDecminvalue"  placeholder="0" min="0" max="5" value="0" />
   
-              <input type="number" class="timervalueInput" placeholder="0" />
+              <input type="number" class="timervalueInput"  id="timerminValue" placeholder="0" min="0" max="9" value="0" />
   
             </div>
   
   
           </div>
   
-  
+          <!-- Seconds Timer Clock -->
+
           <div class="timersecContainer timertextvalueContainer ">
   
-            <div class="hourtextConatiner timertextContainer">
+            <div class="sectextConatiner timertextContainer">
   
               <h3 class="timerText">S</h3>
   
@@ -81,11 +84,11 @@
   
             </div>
   
-            <div class="hourvalueContainer timervalueContainer">
+            <div class="secvalueContainer timervalueContainer">
   
-              <input type="number" class="timervalueInput" placeholder="0" />
+              <input type="number" class="timervalueInput" id="timerDecsecvalue" placeholder="0" min="0" max="5" value="0" />
   
-              <input type="number" class="timervalueInput" placeholder="0" />
+              <input type="number" class="timervalueInput" id="timersecvalue"  placeholder="0" min="0" max="9" value="0" />
   
             </div>
   
@@ -97,25 +100,21 @@
   
         <div class="timerbuttonContainer">
   
-          <button class="btn btn-success timerstartbtn timerbuttons" type="button"> Start the Timer </button>
+          <button class="btn btn-success timerstartbtn timerbuttons" id="timerstartbtn" type="button"> Start the Timer </button>
+
+          <button class="btn btn-danger timerresetbtn timerbuttons" id="timerresetbtn" type="button"> Reset the Timer </button>
   
-          <button class="btn btn-success timerstopbtn timerbuttons" type="button"> Stop the Timer </button>
+          <button class="btn btn-success timerstopbtn timerbuttons" id="timerstopbtn" type="button"> Stop the Timer </button>
   
         </div>
   
 
-      </div>
-
-            
+      </div>       
 
     </body>
           
-
-    
-        
-    
-
 <script src="index.js"></script>
+
 
 </html>
 
